@@ -3,9 +3,10 @@
 
 #include <vector>
 #include "game_level.h"
+#include "character.h"
 
 enum GameState {
-	ACTIVE, MENU, WIN
+	ACTIVE, MENU
 };
 
 class Game {
@@ -13,6 +14,7 @@ class Game {
 		GameState state;
 		std::vector<GameLevel> levels;
 		unsigned int level;
+		std::vector<Character> characters;
 		bool keys[1024];
 		unsigned int width, height;
 

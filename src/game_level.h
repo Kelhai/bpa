@@ -19,8 +19,10 @@ class GameLevel {
 
 		bool isCompleted();
 
-	private:
+	public:
 		void init(std::vector<std::vector<unsigned int>> tileData, unsigned int levelWidth, unsigned int levelHeight);
+		float unitWidth;
+		float unitHeight;
 };
 	
 #endif
